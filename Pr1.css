@@ -1,0 +1,51 @@
+.out 
+    {
+    display: grid;
+    grid-template-areas:
+    "head head head" 
+    "main main main"
+    "aside aside aside"
+    "foot foot foot";
+    grid-gap: 5px;
+    grid-template-columns:  30% 1fr  30%;
+    background-color:white;
+    }
+
+    .out .header
+    {
+        grid-area: head;
+        background-color: rgb(196, 109, 109);
+        height: 10px;
+        padding: 15px;
+        margin: auto 500px ;
+        order: 0;
+    }
+    .out .aside 
+    {
+        grid-area: asise;
+        height: 30px;
+        padding: 10px;
+        margin: 10px;
+        background-color:rgb(156, 54, 54);
+        
+    }
+    .out main 
+    {
+        grid-area: main;
+        background-color:rgb(167, 45, 45);
+        height: 80px;
+        margin: 50px 100px;
+        padding: 20px;
+        order: 0;
+    }
+        
+    .out .footer 
+    {
+        grid-area: foot;
+        background-color:rgb(247, 10, 50);
+        height: 100px;
+        padding: 20px;
+        margin: 50px 100px;
+        order: 0;
+    }
+    
